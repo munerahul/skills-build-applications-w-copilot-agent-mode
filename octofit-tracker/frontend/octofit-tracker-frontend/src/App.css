@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+
+body {
+  background: linear-gradient(135deg, #e3f0ff 0%, #f9e3ff 100%);
+  color: #222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background: linear-gradient(90deg, #007bff 0%, #6610f2 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar-brand img {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2, .card-header h2 {
+  color: #007bff;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border-radius: 12px;
+}
+.card-header {
+  background: linear-gradient(90deg, #007bff 0%, #6610f2 100%);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table th {
+  background: #f1f3fa;
+  color: #007bff;
+  font-weight: 600;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9ff;
+}
+.table-bordered {
+  border: 1px solid #dee2e6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  background: linear-gradient(90deg, #007bff 0%, #6610f2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.btn:hover {
+  background: linear-gradient(90deg, #6610f2 0%, #007bff 100%);
+  color: #fff;
+}
+
+a {
+  color: #6610f2;
+  text-decoration: none;
+}
+a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Headings */
+.card-header.bg-primary, .card-header.bg-success, .card-header.bg-info, .card-header.bg-warning, .card-header.bg-secondary {
+  background: linear-gradient(90deg, #007bff 0%, #6610f2 100%) !important;
+  color: #fff !important;
 }
